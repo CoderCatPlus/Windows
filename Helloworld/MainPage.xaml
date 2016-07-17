@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Helloworld.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Helloworld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" FontFamily="Harlow Solid Italic">
+
+    <Grid Margin="0,19.333,0,-0.333">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="154,43,0,0" TextWrapping="Wrap" Text="Calculator" VerticalAlignment="Top" FontFamily="Blackadder ITC" Height="26" Width="78" FontSize="16"/>
+        <TextBox x:Name="num2" HorizontalAlignment="Left" Margin="81,320,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="#FFF77DF0" Width="192" TextChanged="num2_TextChanged"/>
+        <TextBox x:Name="num1" HorizontalAlignment="Left" Margin="81,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="#FFE979E2" Height="43" Width="192"/>
+        <Button x:Name="add" Content="+" HorizontalAlignment="Left" Margin="43,411,0,0" VerticalAlignment="Top" Click="add_Click"/>
+        <Button x:Name="subtract" Content="-" HorizontalAlignment="Left" Margin="229,411,0,0" VerticalAlignment="Top" Click="subtract_Click"/>
+        <Button x:Name="divide" Content="/" HorizontalAlignment="Left" Margin="229,468,0,0" VerticalAlignment="Top" Click="divide_Click"/>
+        <Button x:Name="multiply" Content="*" HorizontalAlignment="Left" Margin="43,468,0,0" VerticalAlignment="Top" Click="multiply_Click"/>
+        <TextBlock x:Name="Answer" HorizontalAlignment="Left" Margin="81,99,0,0" TextWrapping="Wrap" Text="Answer" VerticalAlignment="Top" Height="55" Width="192" FontSize="16" FontWeight="Bold"/>
+    </Grid>
+</Page>
